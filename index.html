@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Første nettside</title>
+    <link rel="stylesheet" href="style.css">
+
+<body style="background-color:black;">
+
+    <center>
+        <div id="colorBox" style="background-color: blue;"><h2 id="headline">Sindre</h2>
+            Noen av mine hobbyer er
+            <li>Bil</li>
+            <li>Foto</li>
+            <li>Hund</li>
+        </div>
+
+
+        <div>
+            <br />
+            <a href="https://www.instagram.com/mehlumfoto/"><img src="img/bilde1.jpg" height="400" width="500" /></a>
+        </div>
+
+        <div>
+           <a href="https://www.instagram.com/noo_gtr33/"><img src="img/bilde2.jpg" height="450" width="620" /></a>
+        </div>
+        
+
+        <div>
+            <br />
+            <button onclick="changeColor()" id="myButton" style="color: blue">Change color</button>
+    
+           <div style=color:blue><h3>Press an image</h3></div>
+        </div>
+
+
+    </center>
+
+    <script>
+
+        let color="black"
+        function changeColor(){
+            if (color === "black") {
+                document.body.style.backgroundColor ="grey";
+                color = "grey";
+            } else {
+                document.body.style.backgroundColor = "black";
+                color = "black";
+            }
+        }
+      
+     </script>
+
+
+</body>
+
+</html>
